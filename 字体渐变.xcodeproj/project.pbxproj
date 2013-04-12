@@ -19,6 +19,9 @@
 		23E8B6011655E5C700D1B5DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E8B6001655E5C700D1B5DF /* ViewController.m */; };
 		23E8B6041655E5C700D1B5DF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E8B6021655E5C700D1B5DF /* ViewController_iPhone.xib */; };
 		23E8B6071655E5C700D1B5DF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E8B6051655E5C700D1B5DF /* ViewController_iPad.xib */; };
+		23E8B6121655E5ED00D1B5DF /* LysLabel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23E8B60F1655E5ED00D1B5DF /* LysLabel.mm */; };
+		23E8B6131655E5ED00D1B5DF /* ParseLyric.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23E8B6111655E5ED00D1B5DF /* ParseLyric.mm */; };
+		23E8B6151655E77C00D1B5DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E8B6141655E77C00D1B5DF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		23E8B6001655E5C700D1B5DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		23E8B6031655E5C700D1B5DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		23E8B6061655E5C700D1B5DF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		23E8B60E1655E5ED00D1B5DF /* LysLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LysLabel.h; sourceTree = "<group>"; };
+		23E8B60F1655E5ED00D1B5DF /* LysLabel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LysLabel.mm; sourceTree = "<group>"; };
+		23E8B6101655E5ED00D1B5DF /* ParseLyric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLyric.h; sourceTree = "<group>"; };
+		23E8B6111655E5ED00D1B5DF /* ParseLyric.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParseLyric.mm; sourceTree = "<group>"; };
+		23E8B6141655E77C00D1B5DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E8B6151655E77C00D1B5DF /* QuartzCore.framework in Frameworks */,
 				23E8B5E81655E5C600D1B5DF /* UIKit.framework in Frameworks */,
 				23E8B5EA1655E5C600D1B5DF /* Foundation.framework in Frameworks */,
 				23E8B5EC1655E5C600D1B5DF /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +67,7 @@
 		23E8B5D81655E5C600D1B5DF = {
 			isa = PBXGroup;
 			children = (
+				23E8B60D1655E5ED00D1B5DF /* Vendor */,
 				23E8B5ED1655E5C600D1B5DF /* 字体渐变 */,
 				23E8B5E61655E5C600D1B5DF /* Frameworks */,
 				23E8B5E41655E5C600D1B5DF /* Products */,
@@ -75,6 +85,7 @@
 		23E8B5E61655E5C600D1B5DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23E8B6141655E77C00D1B5DF /* QuartzCore.framework */,
 				23E8B5E71655E5C600D1B5DF /* UIKit.framework */,
 				23E8B5E91655E5C600D1B5DF /* Foundation.framework */,
 				23E8B5EB1655E5C600D1B5DF /* CoreGraphics.framework */,
@@ -108,6 +119,18 @@
 				23E8B5FD1655E5C700D1B5DF /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23E8B60D1655E5ED00D1B5DF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				23E8B60E1655E5ED00D1B5DF /* LysLabel.h */,
+				23E8B60F1655E5ED00D1B5DF /* LysLabel.mm */,
+				23E8B6101655E5ED00D1B5DF /* ParseLyric.h */,
+				23E8B6111655E5ED00D1B5DF /* ParseLyric.mm */,
+			);
+			name = Vendor;
+			path = "字体渐变/Vendor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +203,8 @@
 				23E8B5F41655E5C600D1B5DF /* main.m in Sources */,
 				23E8B5F81655E5C600D1B5DF /* AppDelegate.m in Sources */,
 				23E8B6011655E5C700D1B5DF /* ViewController.m in Sources */,
+				23E8B6121655E5ED00D1B5DF /* LysLabel.mm in Sources */,
+				23E8B6131655E5ED00D1B5DF /* ParseLyric.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
